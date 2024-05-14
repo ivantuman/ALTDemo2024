@@ -270,7 +270,9 @@ iperf3 -c 10.12.31.9
 
 # Задание 6. Составление backup скриптов для сохранения конфигурации сетевых устройств, а именно HQ-R BR-R. 
 
-Пишем просто bash-скрипт
+# 1.
+
+Пишем простой bash-скрипт
 ```
 nano backup-script.sh
 ```
@@ -287,6 +289,23 @@ chmod +x backup-script.sh
 И наблюдаем такую картину
 ![image](https://github.com/ivantuman/ALTDemo2024/assets/148867523/9d1ce38c-e40c-47c4-9241-9465095a6586)
 Скрипт работает
+
+# 2.
+
+```
+mkdir /var/backup
+mkdir /var/backup-script
+```
+```
+nano /var/backup-script/backup.sh
+```
+![image](https://github.com/ivantuman/ALTDemo2024/assets/148867523/b92cd540-a909-4dbc-be46-78380fcc600f)
+```
+chmod +x /var/backup-script/backup.sh
+```
+```
+/var/backup-script/backup.sh
+```
 
 # Задание 7. Настройка подключения по SSH для удалённого конфигурирования устройства HQ-SRV по порту 2222. 
 
